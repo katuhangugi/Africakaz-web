@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Converter App</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- your app's UI goes here -->
+    </div>
+    <!-- Main Conversion Page -->
+    <div class="page" id="conversion-page">
+        <h1>Image Converter App</h1>
+        <label for="image-file">Select Image File:</label>
+        <input type="file" id="image-file" accept=".png,.jpg,.jpeg,.gif,.bmp">
+        <div class="formats">
+            <label>
+        <input type="radio" name="format" value="png" checked /> PNG
+      </label>
+            <label>
+        <input type="radio" name="format" value="jpg" /> JPG
+      </label>
+            <label>
+        <input type="radio" name="format" value="gif" /> GIF
+      </label>
+            <label>
+        <input type="radio" name="format" value="bmp" /> BMP
+      </label>
+        </div>
+        <button class="btn" id="convert-btn">Convert</button>
+    </div>
+
+    <!-- Information Pages -->
+    <div class="page" id="about-page">
+        <h1>About</h1>
+        <p>This app allows you to convert images between different file formats.</p>
+    </div>
+
+    <div class="page" id="help-page">
+        <h1>Help</h1>
+        <p>To convert an image, select a file and choose the desired output format.</p>
+    </div>
+
+</body>
+
+</html>
